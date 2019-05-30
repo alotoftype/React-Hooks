@@ -4,14 +4,14 @@ import Todo from "./components/todo";
 import "./styles.css";
 import { format } from "path";
 
-function TodoForm({ addTodo }) {
+function TodoForm({ addToDo }) {
   const [value, setValue] = useState("");
 
   const handleSubmit = e => {
     e.preventDefault();
     console.log("this is my value", e, value);
     if (!value) return;
-    addTodo("greeting");
+    addToDo("greeting");
     setValue("");
   };
 
